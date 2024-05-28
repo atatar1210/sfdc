@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="What's the weather like here?">
+        <lightning-layout>
+            <!-- Location -->
+            <lightning-layout-item size="1" medium-device-size="3" padding="around_xx-small">
+                <lightning-card icon-name="standard:location" class="slds-align_absolute-center" title="Location">
+                    <div class="slds-align_absolute-center css-text">{city}</div>
+                </lightning-card>
+            </lightning-layout-item>
+            <!-- Location -->
+            <!-- Temperature -->
+            <lightning-layout-item size="1" medium-device-size="3" padding="around_xx-small">
+                <lightning-card icon-name="custom:custom97" class="slds-align_absolute-center" title="Max Temperature">
+                    <div class="slds-align_absolute-center css-text">{tempMax} (F)</div>
+                </lightning-card>
+            </lightning-layout-item>
+            <!-- Temperature -->
+            <!-- Weather Conditions -->
+            <lightning-layout-item size="1" medium-device-size="3" padding="around_xx-small">
+                <lightning-card icon-name="utility:flow" class="slds-align_absolute-center" title="Weather Condition">
+                    <div class="slds-align_absolute-center css-text">
+                        {description}
+                    </div>
+                </lightning-card>
+            </lightning-layout-item>
+            <!-- Weather Conditions -->
+        </lightning-layout>
+    </lightning-card>
+</template>
